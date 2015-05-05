@@ -1,0 +1,10 @@
+applications:
+- name: eas-notification-email
+  memory: 512M 
+  instances: 1
+  host: eas-notification-email
+  path: target/eas-email-notification-0.0.1-SNAPSHOT.war
+  services:
+    - easdb
+  env:
+   JAVA_OPTS: -Djava.security.egd=file:///dev/urandom
