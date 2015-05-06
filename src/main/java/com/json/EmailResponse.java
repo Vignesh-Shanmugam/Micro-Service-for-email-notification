@@ -1,4 +1,4 @@
-package com.json;
+package com.emc.eas.json;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.annotation.JsonPOJOBuilder;

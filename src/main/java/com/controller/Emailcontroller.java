@@ -1,4 +1,4 @@
-package com.controller;
+package com.emc.eas.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -6,10 +6,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.json.EmailRequestJson;
-import com.json.EmailResponse;
-import com.model.EmailTemplate;
-import com.model.service.EmailNotificationServiceImpl;
+import com.emc.eas.json.EmailRequestJson;
+import com.emc.eas.json.EmailResponse;
+import com.emc.eas.model.EmailTemplate;
+import com.emc.eas.model.service.EmailNotificationServiceImpl;
 
 @RestController
 @RequestMapping("/email")

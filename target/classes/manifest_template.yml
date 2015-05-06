@@ -6,15 +6,15 @@ applications:
   memory: 512M
   instances: 1
   host: emailMessageUtilService
-  domain: cf.isus.aaa.com
+  domain: cf.isus.emc.com
   path: emailMessageUtilService-@build.timestamp@.war 
   services:
-    - aa_logdrain
+    - TeS_logdrain
     - TeS_Rmq
   env:
     SPRING_PROFILES_ACTIVE: cloud
-    mail_host: mailhub.lss.aaa.com
+    mail_host: mailhub.lss.emc.com
     APP_NAME: emailMessageUtilService
-    APM_SERVER_NAME: cf.isus.aaa.com
+    APM_SERVER_NAME: cf.isus.emc.com
     APM_PORT: 5443
     APM_SSL_DEFAULT: com.wily.isengard.postofficehub.link.net.SSLSocketFactory

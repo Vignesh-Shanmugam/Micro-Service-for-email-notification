@@ -5,6 +5,10 @@ spring:
   profiles: default
 server:
    port:9000
+rabbitmq:
+  email-queue: notification.queue.email
+  routingkey : notification.queue.email
+  exchange : ELMS.TES.DIR.EXG
 mail:
   serviceEnabled: true
   protocol: smtp
@@ -14,10 +18,17 @@ spring:
   profiles: local
 server:
    port:9000
+rabbitmq:
+  host: localhost
+  virtualhost: localhost
+  username: guest
+  password: guest
 mail:
-  host: mailhub.aaa.bbb.com
+  host: mailhub.lss.emc.com
 ---
 spring:
   profiles: cloud
+rabbitmq:
+  service-name: TeS_Rmq
 mail:
-  host: mailhub.aaa.bbb.com
+  host: mailhub.lss.emc.com
