@@ -1,4 +1,4 @@
-package com.emc.eas.model;
+package com.model;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;

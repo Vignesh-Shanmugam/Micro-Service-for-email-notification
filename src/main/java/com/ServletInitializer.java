@@ -1,4 +1,4 @@
-package com.emc.eas;
+package com;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.context.web.SpringBootServletInitializer;
