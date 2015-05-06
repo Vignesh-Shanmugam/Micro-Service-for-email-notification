@@ -1,9 +1,9 @@
 applications:
-- name: eas-notification-email
+- name: xxx-notification-email
   memory: 512M 
   instances: 1
-  host: eas-notification-email
-  path: target/eas-email-notification-0.0.1-SNAPSHOT.war
+  host: xxx-notification-email
+  path: target/xxx-email-notification-0.0.1-SNAPSHOT.war
   services:
     - easdb
   env:

@@ -1,5 +1,5 @@
 
-package com.emc.eas.model.constants;
+package com.model.constants;
 
 /**
  * This class is used for constants.
